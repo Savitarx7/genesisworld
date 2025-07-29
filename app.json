@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "GenesisWorld",
+    "slug": "genesisworld",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "jsEngine": "hermes",
+    "updates": {
+      "url": "https://u.expo.dev/placeholder-project-id",
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"]
+  }
+}

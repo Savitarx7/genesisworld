@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-export default function Block({ position, size, color = '#003300', cameraX = 0 }) {
+export default function Bullet({ position, size, cameraX = 0 }) {
   const width = size[0];
   const height = size[1];
   return (
@@ -12,9 +12,7 @@ export default function Block({ position, size, color = '#003300', cameraX = 0 }
         top: position[1],
         width,
         height,
-        backgroundColor: color,
-        borderColor: '#00ff00',
-        borderWidth: 1,
+        backgroundColor: '#ffff00',
       }}
     />
   );

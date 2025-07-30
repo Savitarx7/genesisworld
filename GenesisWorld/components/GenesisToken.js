@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-export default function GenesisToken({ position, size, activated }) {
+export default function GenesisToken({ position, size, activated, offsetX = 0 }) {
   const width = size[0];
   const height = size[1];
   return (
     <View
       style={{
         position: 'absolute',
-        left: position[0],
+        left: position[0] - offsetX,
         top: position[1],
         width,
         height,

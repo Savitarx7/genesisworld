@@ -1,8 +1,9 @@
+import { registerRootComponent } from 'expo';
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import GenesisWorldScreen from './GenesisWorld/GenesisWorldScreen';
 
-export default function App() {
+function App() {
   return (
     <SafeAreaView style={styles.container}>
       <GenesisWorldScreen />
@@ -16,3 +17,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#000',
   },
 });
+
+// 👇 Register the app with Expo
+registerRootComponent(App);

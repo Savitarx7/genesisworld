@@ -34,5 +34,6 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#0f0',
+    fontFamily: 'FiraCode',
   },
 });

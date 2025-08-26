@@ -9,6 +9,29 @@
       "url": "https://u.expo.dev/placeholder-project-id",
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"]
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow GenesisWorld to access the camera.",
+        "NSMicrophoneUsageDescription": "Allow GenesisWorld to access the microphone.",
+        "NSPhotoLibraryUsageDescription": "Allow GenesisWorld to access your photos.",
+        "NSPhotoLibraryAddUsageDescription": "Allow GenesisWorld to save photos.",
+        "NSBluetoothAlwaysUsageDescription": "Allow GenesisWorld to use Bluetooth.",
+        "NSBluetoothPeripheralUsageDescription": "Allow GenesisWorld to connect to nearby Bluetooth devices.",
+        "NSLocalNetworkUsageDescription": "Allow GenesisWorld to communicate with devices on your network.",
+        "NSMotionUsageDescription": "Allow GenesisWorld to access motion data.",
+        "NSFaceIDUsageDescription": "Allow GenesisWorld to use Face ID for authentication."
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "BLUETOOTH_CONNECT",
+        "ACCESS_FINE_LOCATION"
+      ]
+    }
   }
 }

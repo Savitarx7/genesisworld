@@ -149,7 +149,7 @@ export default function GenesisWorldScreen() {
       <TextBox text={story} />
       {Math.abs(gameEntities.player.position[0] - gameEntities.token.position[0]) < 50 && (
         <TouchableOpacity style={styles.dropButton} onPress={handleDropToken} disabled={tokenDropped}>
-          <Text style={{ color: '#0f0' }}>{tokenDropped ? 'Token Placed' : 'Drop Token'}</Text>
+          <Text style={styles.dropButtonText}>{tokenDropped ? 'Token Placed' : 'Drop Token'}</Text>
         </TouchableOpacity>
       )}
     </View>
@@ -173,5 +173,9 @@ const styles = StyleSheet.create({
     padding: 10,
     borderColor: '#00ff00',
     borderWidth: 1,
+  },
+  dropButtonText: {
+    color: '#0f0',
+    fontFamily: 'FiraCode',
   },
 });

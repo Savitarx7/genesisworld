@@ -24,5 +24,6 @@ const styles = StyleSheet.create({
   text: {
     color: '#0f0',
     textAlign: 'center',
+    fontFamily: 'FiraCode',
   },
 });
